@@ -1,5 +1,4 @@
 import builtins
-
 from main import main_functions
 import pytest
 
