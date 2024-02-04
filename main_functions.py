@@ -137,19 +137,12 @@ def run_transaction(file_path, user):
 
 
 def check_int_input(input_text):
-
-    value = int(input(input_text))
-    return [True, value]
-
-
-
-# def check_int_input(input_text):
-#     try:
-#         value = int(input(input_tex
-#         return [True, value]
-#     except ValueError:
-#         print('Введите, пожалуйста, число \n')
-#         return [False, -1]
+    try:
+        value = int(input(input_text))
+        return [True, value]
+    except ValueError:
+        print('Введите, пожалуйста, число \n')
+        return [False, -1]
 
 
 def transaction_filter(file_path, threshold):
